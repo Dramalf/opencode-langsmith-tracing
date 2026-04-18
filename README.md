@@ -1,11 +1,22 @@
 # LangSmith Tracing Plugin for opencode
 
-An [opencode](https://opencode.ai) plugin that streams every conversation,
-LLM call, tool invocation, and context compaction to
-[LangSmith](https://smith.langchain.com). It mirrors the trace taxonomy
-produced by the official
-[`langsmith-claude-code-plugins`](https://github.com/langchain-ai/langsmith-claude-code-plugins)
-so existing LangSmith dashboards built for Claude Code continue to work.
+[![npm version](https://img.shields.io/npm/v/langsmith-opencode-tracing.svg?logo=npm&logoColor=white)](https://www.npmjs.com/package/langsmith-opencode-tracing)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](./LICENSE)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.7-3178C6?logo=typescript&logoColor=white)](./tsconfig.json)
+[![Node >=20](https://img.shields.io/badge/Node-%3E%3D20-339933?logo=node.js&logoColor=white)](./package.json)
+
+> **Full observability for [opencode](https://opencode.ai) sessions.**
+> Stream every conversation turn, LLM call, tool call, reasoning step, token
+> usage, cost, and context compaction to
+> [LangSmith](https://smith.langchain.com). Trace taxonomy compatible with
+> the official
+> [`langsmith-claude-code-plugins`](https://github.com/langchain-ai/langsmith-claude-code-plugins),
+> so existing LangSmith dashboards and evaluators built for Claude Code
+> work unchanged.
+
+**Keywords**: opencode tracing · LangSmith tracing for opencode · opencode
+plugin · opencode observability · LLM tracing · agent tracing · Claude Code
+equivalent for opencode.
 
 ## Trace hierarchy
 
@@ -36,7 +47,7 @@ LangSmith rather than hanging open.
    checkout). From a local clone:
 
    ```bash
-   cd langsmith-opencode-plugins
+   cd langsmith-opencode-tracing
    npm install
    npm run build
    npm link
@@ -48,7 +59,7 @@ LangSmith rather than hanging open.
    ```json
    {
      "$schema": "https://opencode.ai/config.json",
-     "plugin": ["langsmith-opencode-plugin"]
+     "plugin": ["langsmith-opencode-tracing"]
    }
    ```
 
@@ -58,7 +69,7 @@ LangSmith rather than hanging open.
 
    ```ts
    // ~/.config/opencode/plugins/langsmith.ts
-   export { LangsmithTracingPlugin as default } from "langsmith-opencode-plugin";
+   export { LangsmithTracingPlugin as default } from "langsmith-opencode-tracing";
    ```
 
 ### From a monorepo / single-file drop-in
