@@ -1,6 +1,6 @@
 # LangSmith Tracing Plugin for opencode
 
-[![CI](https://github.com/Dramalf/langsmith-opencode-tracing/actions/workflows/ci.yml/badge.svg)](https://github.com/Dramalf/langsmith-opencode-tracing/actions/workflows/ci.yml)
+[![CI](https://github.com/Dramalf/opencode-langsmith-tracing/actions/workflows/ci.yml/badge.svg)](https://github.com/Dramalf/opencode-langsmith-tracing/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](./LICENSE)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.7-3178C6?logo=typescript&logoColor=white)](./tsconfig.json)
 [![Node >=20](https://img.shields.io/badge/Node-%3E%3D20-339933?logo=node.js&logoColor=white)](./package.json)
@@ -47,7 +47,7 @@ LangSmith rather than hanging open.
    checkout). From a local clone:
 
    ```bash
-   cd langsmith-opencode-tracing
+   cd opencode-langsmith-tracing
    npm install
    npm run build
    npm link
@@ -59,7 +59,7 @@ LangSmith rather than hanging open.
    ```json
    {
      "$schema": "https://opencode.ai/config.json",
-     "plugin": ["langsmith-opencode-tracing"]
+     "plugin": ["opencode-langsmith-tracing"]
    }
    ```
 
@@ -69,7 +69,7 @@ LangSmith rather than hanging open.
 
    ```ts
    // ~/.config/opencode/plugins/langsmith.ts
-   export { LangsmithTracingPlugin as default } from "langsmith-opencode-tracing";
+   export { LangsmithTracingPlugin as default } from "opencode-langsmith-tracing";
    ```
 
 ### From a monorepo / single-file drop-in

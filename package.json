@@ -1,5 +1,5 @@
 {
-  "name": "langsmith-opencode-tracing",
+  "name": "opencode-langsmith-tracing",
   "version": "0.1.0",
   "description": "LangSmith tracing plugin for opencode — traces sessions, LLM calls, tool calls, reasoning, and context compaction. Trace taxonomy compatible with the official langsmith-claude-code-plugins.",
   "type": "module",
@@ -50,13 +50,13 @@
     "email": "dramalfcsc@gmail.com"
   },
   "license": "MIT",
-  "homepage": "https://github.com/Dramalf/langsmith-opencode-tracing#readme",
+  "homepage": "https://github.com/Dramalf/opencode-langsmith-tracing#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Dramalf/langsmith-opencode-tracing.git"
+    "url": "git+https://github.com/Dramalf/opencode-langsmith-tracing.git"
   },
   "bugs": {
-    "url": "https://github.com/Dramalf/langsmith-opencode-tracing/issues"
+    "url": "https://github.com/Dramalf/opencode-langsmith-tracing/issues"
   },
   "peerDependencies": {
     "@opencode-ai/plugin": ">=1.0.0"
