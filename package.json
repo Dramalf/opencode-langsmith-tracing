@@ -1,6 +1,6 @@
 {
   "name": "opencode-langsmith-tracing",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "LangSmith tracing plugin for opencode — traces sessions, LLM calls, tool calls, reasoning, and context compaction. Trace taxonomy compatible with the official langsmith-claude-code-plugins.",
   "type": "module",
   "main": "./dist/index.js",

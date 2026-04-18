@@ -33,13 +33,7 @@ import {
   handleToolBefore,
   setConfig,
 } from "./tracer.js";
-import type {
-  AssistantMessageInfo,
-  Event,
-  MessageInfo,
-  Part,
-  UserMessageInfo,
-} from "./types.js";
+import type { Event, MessageInfo, Part, UserMessageInfo } from "./types.js";
 
 interface OpenCodeHooks {
   event?: (input: { event: { type: string; properties: unknown } }) => Promise<void>;
@@ -250,8 +244,9 @@ export const LangsmithTracingPlugin: PluginFunction = async (ctx) => {
 
 export default LangsmithTracingPlugin;
 
-export { loadConfig } from "./config.js";
-export { flushAll as flushPendingTraces } from "./tracer.js";
-
-// Unused imports kept for module API surface type references
-export type { AssistantMessageInfo, UserMessageInfo };
+// NOTE: opencode's plugin loader treats every export of a plugin module as a
+// plugin function ("exports one or more plugin functions" — see
+// https://opencode.ai/docs/plugins). Re-exporting non-plugin utilities here
+// crashes startup with `TypeError: undefined is not an object (evaluating
+// '_.auth')` because opencode tries to read .auth on whatever the export
+// returns. Keep this module's exports limited to the plugin function only.
