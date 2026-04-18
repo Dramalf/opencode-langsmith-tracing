@@ -1,6 +1,6 @@
 # LangSmith Tracing Plugin for opencode
 
-[![npm version](https://img.shields.io/npm/v/langsmith-opencode-tracing.svg?logo=npm&logoColor=white)](https://www.npmjs.com/package/langsmith-opencode-tracing)
+[![CI](https://github.com/Dramalf/langsmith-opencode-tracing/actions/workflows/ci.yml/badge.svg)](https://github.com/Dramalf/langsmith-opencode-tracing/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](./LICENSE)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.7-3178C6?logo=typescript&logoColor=white)](./tsconfig.json)
 [![Node >=20](https://img.shields.io/badge/Node-%3E%3D20-339933?logo=node.js&logoColor=white)](./package.json)

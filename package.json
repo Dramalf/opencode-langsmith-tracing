@@ -58,9 +58,6 @@
   "bugs": {
     "url": "https://github.com/Dramalf/langsmith-opencode-tracing/issues"
   },
-  "publishConfig": {
-    "access": "public"
-  },
   "peerDependencies": {
     "@opencode-ai/plugin": ">=1.0.0"
   },
