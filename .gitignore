@@ -11,3 +11,4 @@ Thumbs.db
 .env.*
 .opencode/langsmith.env
 .opencode/.env
+verify/
